@@ -1,0 +1,566 @@
+header {
+    position: absolute;
+    width: 480px;
+    height: 40px;
+    left: 100px;
+    top: 100px;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 1;    
+}
+header * {
+    display: inline;
+}
+header ul{
+    padding-inline-start: 0px;
+}
+nav{
+    float: right;
+    margin-top: 14px;
+
+}
+header a{
+top: 14px;
+margin-left: 30px;
+font-family: Arial;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 26px;
+color: #6A707B;
+text-decoration: none;
+}
+header a:nth-child(0){
+    margin-left: 231px;
+}
+.logo{
+    position: absolute;
+    width: 25px;
+    height: 40px;
+    left:0px;
+    z-index: 1;
+    background: #FFFFFF;
+}
+.logoname{
+    position: absolute;
+width: 78px;
+height: 16px;
+left: 40px;
+top: 20px;
+z-index: 1;
+}
+.desktop{
+    position: relative;
+width: 1920px;
+height: 1080px;
+background: #FFFFFF;
+}
+.image {
+    position: absolute;
+width: 1240px;
+height: 1080px;
+left: 680px;
+top: 0px;
+  }
+.functional{
+    position: absolute;
+width: 680px;
+height: 1080px;
+left: 0px;
+top: 0px;
+background: linear-gradient(180deg, #FFFFFF 0%, #F2F5FA 100%);
+  }
+
+.text h1{
+    position: absolute;
+width: 399px;
+height: 44px;
+left: 140px;
+top: 374px;
+
+font-family: Georgia;
+font-style: normal;
+font-weight: normal;
+font-size: 32px;
+line-height: 44px;
+color: #131821;
+}  
+.text h2{
+    position: absolute;
+width: 400px;
+height: 56px;
+left: 140px;
+top: 433px;
+
+font-family: Arial;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 28px;
+color: #6A707B;
+}
+.arrow-button{
+  position: absolute;
+  width: 24px;
+  height: 14px;
+  left: 699px;
+  top: 567px;
+  background: transparent;
+  border: none;
+  
+}
+.input [type="text" i]{
+    position: absolute;
+    width: 663px;
+    height: 70px;
+    left: 100px;
+    top: 539px;
+    background: #FFFFFF;
+    border: 1px solid #E3E3E4;
+    box-sizing: border-box;
+    border-left: 4px solid #4066A5; 
+    outline: none;   
+}
+.input [type="text" i] ::placeholder{
+position: absolute;
+width: 227px;
+height: 24px;
+left: 144px;
+top: 562px;
+font-family: Arial;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+color: #6A707B;
+}
+
+.input [type="text" i]:hover{
+  background: #FFFFFF;
+    border: 1px solid #E3E3E4;
+    border-left: 4px solid #4066A5; 
+    box-sizing: border-box;
+    box-shadow: 0px 30px 40px rgba(19, 24, 33, 0.06);
+}
+
+.input [type="text" i]:focus{
+  background: #FFFFFF;
+  border: 1px solid #4066A5;
+  border-left: 4px solid #4066A5; 
+  box-sizing: border-box;
+  box-shadow: 0px 30px 40px rgba(19, 24, 33, 0.06);
+  
+}
+
+.container {
+    position: absolute;
+    width: 359px;
+    height: 28px;
+    left: 181px;
+    top: 662px;
+    
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #6A707B;
+  }
+  
+ .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+
+  .checkmark {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    left: -40px;
+    top: 0px;
+    
+    background: #ffffff;
+    border: 1px solid #E3E3E4;
+  }
+  
+  .container input:checked ~ .checkmark {
+    background-color: #4066A5;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+.line{
+position: absolute;
+width: 400px;
+height: 1px;
+left: 140px;
+top: 740px;
+
+background: #E3E3E4;
+}
+
+/* Style all font awesome icons */
+.social {
+    position: absolute;
+    width: 260px;
+    height: 46px;
+    left: 218px;
+    top: 791px;
+    text-align:left;
+    font-size: 16px;
+  }
+  .fa{
+      border: 2px solid #E2E3E4;
+    border-radius: 50%;
+    color: #E3E3E4;
+    width: 42px;
+    height: 42px;
+}   
+  
+  /* Add a hover effect if you want */
+  .fa-facebook:hover {
+    background-color: #4066A5;
+    color:#FFFFFF;
+  }
+  .fa-twitter:hover {
+    background-color: #1DA1F2;
+    color:#FFFFFF;
+  }
+  .fa-instagram:hover {
+    background-color: #C13584;
+    color:#FFFFFF;
+  }
+  .fa-youtube:hover {
+    background-color: #FF0000;
+    color:#FFFFFF;
+  }
+  .fa-facebook:active{
+    background-color: #2F4A80;
+    color:#FFFFFF;
+  }
+  .fa-twitter:active{
+    background-color: #177FBF;
+    color:#FFFFFF;
+  }
+  .fa-instagram:active{
+    background-color: #8F2762;
+    color:#FFFFFF;
+  }
+  .fa-youtube:active{
+    background-color: #CC0000;
+    color:#FFFFFF;
+  }
+  .fa-facebook-f:before, .fa-facebook:before {
+    position: absolute;
+   
+    left: 7.0%;   
+   top: 33.0%;
+    }
+
+  .fa-youtube-f::before, .fa-youtube::before{
+    position: absolute;
+    left: 60.0%;
+    top: 34.0%;
+ 
+  }
+  .fa-instagram-f::before, .fa-instagram::before{
+    position: absolute;
+    left: 87.0%;
+    top: 33.0%;
+}
+.fa-twitter-f::before, .fa-twitter::before{
+    position: absolute;
+    left: 33.0%;
+    top: 32.0%;
+}
+.fa-facebook{
+    margin-right:10px;
+    margin-left: 0px;
+}
+.fa-twitter{
+    margin-right:10px;
+    margin-left: 10px; 
+}
+.fa-youtube{
+    margin-right:10px;
+    margin-left: 10px; 
+}
+.fa-instagram{
+    margin-right:0px;
+    margin-left: 10px; 
+}
+
+.input small {
+	position: absolute;
+  padding-left: 100px;
+  top: 620px;
+	font-family: Arial;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 18px;
+color: #B80808;
+}
+.thank-you h1{
+position: absolute;
+width: 400px;
+height: 44px;
+left: 140px;
+top: 389px;
+
+font-family: Georgia;
+font-style: normal;
+font-weight: normal;
+font-size: 32px;
+line-height: 44px;
+color: #131821;
+}
+.thank-you h2{
+  position: absolute;
+  width: 400px;
+  height: 56px;
+  left: 140px;
+  top: 453px;
+  
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: #6A707B;
+}
+.trophie-image{
+position: absolute;
+width: 44px;
+height: 70px;
+left: 140px;
+top: 289px;
+}
+
+/* Mobile version of page*/
+@media only screen and (max-width: 768px){
+  header {
+    position: absolute;
+    width: 375px;
+    height: 66px;
+    left: 0px;
+    top:0px;
+    background-color: #FFFFFF;   
+}
+.image {
+  position: absolute;
+  width: 1119px;
+  height: 746px;
+  left: -281px;
+}
+header a{
+  width: 37px;
+  height: 24px;
+  left: 149px;
+  top: 21px;
+  
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #6A707B;
+  }
+  .logo{
+    position: absolute;
+    width: 25px;
+    height: 40px;
+    left: 20px;
+    top: 10px;
+    
+  }
+  .logoname{
+     display:none;
+  }
+  .mobilecontent{
+    position: absolute;
+    width: 335px;
+    height: 371px;
+    left: 20px;
+    top: 188px;
+    
+    background: linear-gradient(180deg, #FFFFFF 0%, #F2F5FA 100%);
+  }
+  .text h1 {
+    position: absolute;
+width: 295px;
+height: 34px;
+left: 20px;
+top: 30px;
+
+font-family: Georgia;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 34px;
+color: #131821;
+}
+.text h2 {
+  position: absolute;
+width: 295px;
+height: 52px;
+left: 20px;
+top: 74px;
+
+font-family: Arial;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 26px;
+color: #6A707B;
+}
+.desktop{
+  position: absolute;
+width: 375px;
+height: 746px;
+left: 0px;
+top: 66px;
+overflow: hidden;
+}
+.arrow-button{
+  position: absolute;
+  width: 24px;
+  height: 14px;
+  left: 276px;
+  top: 169px;
+  background: transparent;
+  border: none;
+  
+}
+.input [type="text" i]{
+  position: absolute;
+  width: 295px;
+  height: 60px;
+  left: 20px;
+  top: 146px;
+  background: #FFFFFF;
+  border: 1px solid #E3E3E4;
+  box-sizing: border-box;
+  border-left: 4px solid #4066A5; 
+  outline: none;   
+}
+.input [type="text" i] ::placeholder{
+position: absolute;
+width: 227px;
+height: 24px;
+left: 144px;
+top: 562px;
+font-family: Arial;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+color: #6A707B;
+}
+.container {
+  width: 254px;
+height: 28px;
+left: 61px;
+top: 226px;
+  
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 28px;
+  color: #6A707B;
+}
+.line{
+  position: absolute;
+width: 295px;
+height: 1px;
+left: 20px;
+top: 274px; 
+  background: #E3E3E4;
+  }
+  .social {
+    position: absolute;
+    width: 260px;
+    height: 46px;
+    left: 40px;
+    top: 295px;
+    text-align:left;
+    font-size: 16px;
+  }
+  .input small {
+    position: absolute;
+    padding-left: 20px;
+    top: 205px;
+    font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 18px;
+  color: #B80808;
+  }
+  .thank-you h1{
+    position: absolute;
+    width: 295px;
+    height: 34px;
+    left: 20px;
+    top: 139px;
+    
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 34px;
+    color: #131821;
+    }
+    .thank-you h2{
+      position: absolute;
+      width: 295px;
+      height: 52px;
+      left: 20px;
+      top: 183px;
+      
+      font-family: Arial;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 26px;
+      color: #6A707B;
+    }
+    .trophie-image{
+    position: absolute;
+    position: absolute;
+    width: 44px;
+  height: 70px;
+  left: 20px;
+  top: 30px;
+    }
+    nav {
+      float: right;
+      margin-top: 21px;
+      margin-right: 20px;
+  }
+}
