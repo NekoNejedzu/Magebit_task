@@ -37,17 +37,17 @@ function checkInputs() {
         x.style.display = "block";
 	} else {
 	//	$.ajax({
-          //  type: 'POST',
-          //  url: 'insert.php',
-           // data:  ({email:emailValue}),
-		//	cache: false,
-           // success: function () {		
+         //   type: 'POST',
+           // url: 'insert.php',
+            //data:  ({email:emailValue}),
+			//cache: false,
+            //success: function () {		
 			x.style.display = "none";
         	email.style.borderColor='#4066A5'; 
         	form.remove();
         	document.getElementById('thank-you').style.display = 'block'
-           // }
-        //  });
+            //}
+         // });
 
         }
     })    
