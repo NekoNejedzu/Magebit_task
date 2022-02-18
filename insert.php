@@ -1,5 +1,5 @@
 <?php
-        ini_set('display_errors', 1); error_reporting(-1);
+       
         $email = $_POST['email'];
         //database details. You have created these details in the third step. Use your own.
         $host = "localhost";
